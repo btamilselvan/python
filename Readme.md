@@ -1,4 +1,5 @@
-##
+# Notes
+- Package is a collection of modules.
 - Make sure the intrepreter can find the modules via path (sys.path) when importing modules.
 - When needed, the path can be appeneded to the sys.path (refer apple.py)
 - Dunder methods / magic method
@@ -8,15 +9,18 @@
 ```
     python -m py_compile entry_point.py
 ```
-- The human-readable version of bytecode can be generated using dis module,
+- The human-readable version of bytecode can be generated using dis (disassemble) module,
 ```
     python -m dis entry_point.py
 ```
 ### Modules
+- https://docs.python.org/3/py-modindex.html
 - A python module can be installed and upgraded using,
 ```
     python -m pip install SomePackage
     python -m pip install --upgrade SomePackage
+    python -m pip install 'SomePackage==1.4'
+    python -m pip install 'SomePackage>=1,<2'
 ```
 - Passing the --user option to python -m pip install will install a package just for the current user, rather than for all users of the system.
 #### Pip
@@ -26,6 +30,9 @@
 - pip install --upgrade pip
 - python -m pip --version  or pip --version
 - pip3 is an updated version of pip which is used basically for python 3+.
+
+### Conda
+- Conda is an open source package management and environment management system. Conda installs, runs, and updates packages as well as the dependencies on them quickly.
 
 ### venv
 - A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them.
@@ -50,7 +57,7 @@
 - The Requests module is used to send HTTP requests with ease.
 - pip3 install requests
 -  https://github.com/request/request https://pypi.org/project/requests/
-- 
+
 
 ### Django
 - Django is more of a framework than it is a module because of the great features and tools that come with it.
@@ -79,3 +86,13 @@ Retrying requests.
 Dealing with HTTP redirects.
 Full test coverage.
 ```
+##### Exceptions
+- A class in an except clause is compatible with an exception if it is the same class or a base class thereof (but not the other way around — an except clause listing a derived class is not compatible with a base class).
+- See exceptions_test.py
+- The try … except statement has an optional 'else' clause, which, when present, must follow all except clauses. It is useful for code that must be executed if the try clause does not raise an exception.
+- The most common pattern for handling Exception is to print or log the exception and then re-raise it (allowing a caller to handle the exception as well).
+- The raise statement allows the programmer to force a specified exception to occur.
+
+### Links
+- https://docs.python.org/3/py-modindex.html
+- https://github.com/request/request https://pypi.org/project/requests/
