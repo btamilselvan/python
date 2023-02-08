@@ -93,6 +93,38 @@ Full test coverage.
 - The most common pattern for handling Exception is to print or log the exception and then re-raise it (allowing a caller to handle the exception as well).
 - The raise statement allows the programmer to force a specified exception to occur.
 
+### Data structures
+#### List
+- In-bulit python module.
+- Stores elements in an ordered sequence, allows different data types, and allows non-unique (elements)
+- Supports various operations like, pop, append, extend, etc.
+
+#### Array
+- Can be imported via 'numpy' or 'array' module.
+- Similar to List but stroes the elements in more compact way. Suitable for long sequence of items.
+- Supports mathematical operations. For e.g. array elements can be easily divided by using, arr/2.
+- array module doesn't allow us to mix the datatypes whereas NumPy allows.
+```
+    import array as arr
+    import numpy as np
+
+    arr1 = arr.array['i', [2,4,6,8]] # 'i' - type code for signed integer
+    division = arr1/2
+    print(division) #[1,2,3,4]
+```
+- Arrays represent basic values and behave very much like lists, except the type of objects stored in them is constrained. The type is specified at object creation time by using a type code, which is a single character.
+
+#### lambda
+
+- lambda arguments: expression
+- in Java terms: lambda method_parameters: method_body
+- e.g. 
+```
+    lambda a,b: a+b
+    add = lambda a,b: a+b
+    add(10,20)
+```
+
 ### Links
 - https://docs.python.org/3/py-modindex.html
 - https://github.com/request/request https://pypi.org/project/requests/
